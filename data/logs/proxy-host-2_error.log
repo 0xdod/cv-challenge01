@@ -1,0 +1,5 @@
+2024/11/21 21:19:38 [error] 244#244: *30873 localhost could not be resolved (3: Host not found), client: 172.20.0.1, server: db.localhost, request: "GET /favicon.ico HTTP/1.1", host: "db.localhost", referrer: "http://db.localhost/"
+2024/11/21 21:19:39 [error] 244#244: *30873 localhost could not be resolved (3: Host not found), client: 172.20.0.1, server: db.localhost, request: "GET / HTTP/1.1", host: "db.localhost"
+2024/11/21 21:19:40 [error] 244#244: *30873 localhost could not be resolved (3: Host not found), client: 172.20.0.1, server: db.localhost, request: "GET /favicon.ico HTTP/1.1", host: "db.localhost", referrer: "http://db.localhost/"
+2024/11/21 21:19:41 [error] 244#244: *30873 localhost could not be resolved (3: Host not found), client: 172.20.0.1, server: db.localhost, request: "GET / HTTP/1.1", host: "db.localhost"
+2024/11/21 21:19:42 [error] 244#244: *30873 localhost could not be resolved (3: Host not found), client: 172.20.0.1, server: db.localhost, request: "GET /favicon.ico HTTP/1.1", host: "db.localhost", referrer: "http://db.localhost/"
