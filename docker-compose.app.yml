@@ -1,0 +1,37 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    networks:
+      - app_devopsdojo
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    networks:
+      - app_devopsdojo
+
+  adminer:
+    image: adminer
+    restart: always
+    networks:
+      - app_devopsdojo
+
+  proxy-manager:
+    image: "jc21/nginx-proxy-manager:latest"
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "81:81"
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+    networks:
+      - app_devopsdojo
+
+networks:
+  app_devopsdojo:
+    external: true
