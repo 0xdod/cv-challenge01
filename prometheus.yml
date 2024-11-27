@@ -11,15 +11,15 @@ scrape_configs:
   - job_name: "loki"
     static_configs:
       - targets:
-          - "cv-challenge01-loki-1:3100"
+          - "loki:3100"
 
   - job_name: "promtail"
     static_configs:
       - targets:
-          - "cv-challenge01-promtail-1:9080"
+          - "promtail:9080"
 
   - job_name: cadvisor
     scrape_interval: 5s
     static_configs:
       - targets:
-          - "cv-challenge01-cadvisor-1:8080"
+          - "cadvisor:8080"
